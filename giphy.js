@@ -32,14 +32,13 @@ var loadGifs = function(){
     })
     offset += 10
     getMoreGifs = false
-    console.log("i loaded more")
   })
 }
 
 var searchGiphy = function(event){
   event.preventDefault()
   searchResults.textContent = ""
-
+  scrollCounter = 0
   loadGifs()
 }
 
@@ -49,7 +48,6 @@ var checkScroll = function() {
       if (scrollCounter < 5) {
         getMoreGifs = true
         scrollCounter += 1
-        console.log(scrollCounter)
         loadGifs()
       } else {
         window.removeEventListener('scroll', checkScroll)
@@ -63,4 +61,3 @@ searchBtn.addEventListener('click', searchGiphy)
 window.addEventListener('scroll', checkScroll)
 
 loadMoreBtn.addEventListener('click', loadGifs)
-
