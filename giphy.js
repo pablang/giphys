@@ -1,9 +1,10 @@
-console.log('hello world')
+console.log('Time to party!')
 
 var searchBtn = document.querySelector('.search-form button')
 var searchItem = document.querySelector('.search-form input')
 var searchResults = document.querySelector('.search-results')
 var loadMoreBtn = document.querySelector('.load-more')
+var container = document.querySelector('.container')
 var offset = 0
 var getMoreGifs = false
 var scrollCounter = 0
@@ -43,8 +44,8 @@ var searchGiphy = function(event){
 }
 
 var checkScroll = function() {
-  if ($(window).scrollTop() + $(window).height() >
-    $(document).height() - nearToBottom && getMoreGifs === false){
+  if (container.scrollTop + container.clientHeight >
+    container.scrollHeight - nearToBottom && getMoreGifs === false){
       if (scrollCounter < 5) {
         getMoreGifs = true
         scrollCounter += 1
@@ -58,6 +59,6 @@ var checkScroll = function() {
 
 searchBtn.addEventListener('click', searchGiphy)
 
-window.addEventListener('scroll', checkScroll)
+container.addEventListener('scroll', checkScroll)
 
 loadMoreBtn.addEventListener('click', loadGifs)
