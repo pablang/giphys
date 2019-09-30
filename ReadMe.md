@@ -2,10 +2,13 @@
 
 Giphy is a fun little app that let's you search for a topic and returns all gifs using that keyword.
 
+![Screenshot](screenshot.png)
+screenshot.png
+
 ### To use:
 
 Click on the link below:
- https://pablang.github.io/giphys.github.io/
+ https://pablang.github.io/giphys/
 
  - Search for a keyword in the input field and click "Search"
 
