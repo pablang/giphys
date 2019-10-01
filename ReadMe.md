@@ -2,8 +2,7 @@
 
 Giphy is a fun little app that let's you search for a topic and returns all gifs using that keyword.
 
-![Screenshot](screenshot.png)
-screenshot.png
+![giphys](https://user-images.githubusercontent.com/51078359/65926865-a640a000-e43a-11e9-9f7a-688d3569ce4b.gif)
 
 ### To use:
 
